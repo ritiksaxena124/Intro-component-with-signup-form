@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 13px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="scroll-py-3">
+    <div
+      class="container px-8 flex flex-col justify-center space-y-5 max-w-sm items-center mt-8 md:space-y-0 md:space-x-18 mx-auto md:max-w-5xl md:flex-row"
+    >
+      <!-- left container -->
+      <div class="space-y-5 flex-1 text-center p-4 md:text-left">
+        <h1 class="text-white font-bold text-3xl md:text-5xl">
+          Learn to code by watching others
+        </h1>
+        <p class="text-white text-sm leading-7">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <!-- right container -->
+      <div class="flex-1 space-y-6">
+        <div
+          class="bg-blue px-6 py-6 text-white text-center mt-14 text-sm rounded-lg"
+        >
+          <span class="font-bold"> Try it free 7 days </span> then $20/mo.
+          thereafter
+        </div>
+
+        <div class="flex flex-col bg-white p-8 my-4 rounded-lg text-sm">
+          <!-- first name -->
+          <div
+            id="first-name-box"
+            class="border border-grayishBlue px-2 py-3 rounded-sm flex items-center justify-between"
+          >
+            <input
+              type="text"
+              placeholder="First Name"
+              class="indent-2 outline-none flex-1"
+              id="first-name"
+            />
+          </div>
+          <p
+            id="fn-error-msg"
+            class="text-red text-right text-[13px] italic mt-2 hidden"
+          >
+            First Name cannot be empty
+          </p>
+          <!-- last name -->
+          <div
+            id="last-name-box"
+            class="border border-grayishBlue px-2 py-3 mt-5 rounded-sm flex items-center justify-between"
+          >
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="indent-2 outline-none flex-1"
+              id="last-name"
+            />
+          </div>
+          <p
+            id="last-name-error-msg"
+            class="text-red text-right mt-2 text-[13px] italic hidden"
+          >
+            Last Name cannot be empty
+          </p>
+          <!-- email address -->
+          <div
+            id="email-box"
+            class="border border-grayishBlue px-2 py-3 mt-5 rounded-sm flex items-center justify-between"
+          >
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="indent-2 outline-none flex-1"
+              id="email"
+            />
+          </div>
+          <p
+            id="email-error"
+            class="text-red text-right mt-2 text-[13px] italic hidden"
+          >
+            Enter correct email address
+          </p>
+          <!-- password -->
+          <div
+            id="pass-box"
+            class="border border-grayishBlue px-2 py-3 mt-5 rounded-sm flex items-center justify-between"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="indent-2 outline-none flex-1"
+              id="pass"
+            />
+          </div>
+          <p
+            id="pass-error-msg"
+            class="text-red text-right mt-2 text-[13px] italic hidden"
+          >
+            Password cannot be empty
+          </p>
+
+          <button
+            id="btn"
+            class="text-center w-full mt-5 bg-green text-white px-2 py-3 rounded-sm hover:bg-lightGreen"
+          >
+            CLAIM YOUR FREE TRIAL
+          </button>
+          <p class="text-center text-[11px] mt-3">
+            <span class="text-grayishBlue"
+              >By clicking the button, you are agreeing to our</span
+            >
+            <span class="text-red">Terms and Services</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution mt-10">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/ritiksaxena124" target="_blank"
+          >Ritik Saxena</a
+        >.
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
